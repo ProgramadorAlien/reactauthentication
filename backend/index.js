@@ -1,13 +1,8 @@
 const express = require('express');
 const mysql = require('mysql');
+const db = require('./database');
 
-// Create connection to MySQL database
-const db = mysql.createPool({
-  host: 'localhost', // Change this to your MySQL host
-  user: 'root', // Change this to your MySQL username
-  password: 'Databaseconnection', // Change this to your MySQL password
-  database: 'reactauthentication' // Change this to your MySQL database name
-});
+
 
 // Attempt to acquire a connection from the pool to check the connection
 db.getConnection((err, connection) => {

@@ -1,0 +1,10 @@
+/* Add your custom styling here */
+.form-group {
+  margin-bottom: 20px; /* Add gap between rows */
+}
+
+.col-form-label {
+  padding-top: 8px; /* Align labels to the left */
+  text-align-last: left;
+}
+
